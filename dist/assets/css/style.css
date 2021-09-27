@@ -1,0 +1,353 @@
+html {
+    font-size: 60%;
+}
+
+body {
+    background-image: url(../images/ava7patterns_wallpaper_1920x1080_1417.png);
+    font-size: 21px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    -webkit-padding-before: 0;
+    padding-block-start: 0;
+    -webkit-padding-start: 0;
+    padding-inline-start: 0;
+    list-style-type: none;
+    margin: 0;
+}
+
+/* Blocks */
+.header {
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color: #e9b014;
+    font-size: 24px;
+    padding-top: 20px;
+    margin-bottom: 50px;
+}
+
+.header__top {
+    margin: 0 auto;
+}
+
+.center {
+    margin-left: 220px;
+}
+
+.left {
+    margin-left: 100px;
+    color: #a3a3a3;
+    font-size: 30px;
+}
+
+.right {
+    padding: 30px 0px;
+    margin-left: 100px;
+    color: #a3a3a3;
+}
+
+.nav {
+    margin: 10px 400px;
+    background-color: none;
+    box-shadow: 15px 15px 15px 15px black;
+}
+
+.nav__list {
+    display: -ms-flexbox;
+    display: flex;
+    list-style-type: none;
+    -webkit-padding-start: 0;
+    padding-inline-start: 0;
+    color: #e9b014;
+}
+
+.nav__item {
+    position: relative;
+}
+
+.nav__item:hover .nav__link {
+    text-decoration: none;
+}
+
+.nav__item:hover > .subnav {
+    display: block;
+}
+
+.nav__link {
+    padding: 0.5rem 1.5rem;
+    display: block;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #e9b014;
+    text-decoration: none;
+    transition: border-top .09s linear;
+}
+
+.nav__link:hover {
+    border-top: 3px solid #e9b014;
+}
+
+.nav__link.has-subnav {
+    position: relative;
+    padding-right: 3rem;
+}
+
+.nav__link.has-subnav::after {
+    position: absolute;
+    content: "";
+    display: block;
+    border-style: solid;
+    border-width: 6px 5px 0 5px;
+    border-color: #e9b014 transparent transparent transparent;
+    top: 50%;
+    right: 1.35rem;
+    -webkit-transform: translateY(-25%);
+    transform: translateY(-25%);
+}
+
+.nav_border {
+    border-top: 3px solid #e9b014;
+}
+
+.container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+.subnav {
+    width: 220px;
+    text-align: left;
+    display: none;
+    background-color: black;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-radius: 0 0 5px 5px;
+    padding: 5px 0;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.subnav__link {
+    display: block;
+    color: #e9b014;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 9px 30px;
+    transition: background-color .2s ease-in-out;
+}
+
+.subnav__link:hover {
+    color: yellow;
+    background-color: darken black, 5%;
+    text-decoration: none;
+}
+
+.page {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.post {
+    width: 1000px;
+    padding: 25px;
+    background-color: black;
+    box-shadow: 15px 15px 25px rgba(29, 26, 26, 0.35);
+    overflow: hidden;
+    word-wrap: break-word;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.post-margin {
+    margin-left: 625px;
+}
+
+.post__title {
+    color: #e9b014;
+    font-size: 25px;
+    font-weight: lighter;
+    margin-bottom: 25px;
+    margin-top: 7px;
+}
+
+.post__text {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: initial;
+    flex-flow: initial;
+    margin-bottom: 25px;
+    margin-left: 15px;
+}
+
+.post__podtext {
+    margin-bottom: 40px;
+    font-size: 18px;
+    margin-left: 15px;
+    color: #e9b014;
+}
+
+.post__price {
+    font-size: 17px;
+    color: yellow;
+    margin-bottom: 0;
+}
+
+.post__photo {
+    padding: 35px 0;
+}
+
+.post__info {
+    margin-left: 40px;
+}
+
+.post__subtitle {
+    color: #e9b014;
+    font-size: 19px;
+    cursor: pointer;
+    transition: color .2s linear;
+}
+
+.post__subtitle:hover {
+    color: #9e7400;
+}
+
+.post__list {
+    margin-top: 5px;
+    -webkit-padding-start: 0;
+    padding-inline-start: 0;
+    font-size: 16px;
+}
+
+.post__list--2 {
+    margin-top: -7px;
+}
+
+.post__date {
+    text-decoration: underline;
+    margin-bottom: 5px;
+}
+
+.post__date--color {
+    text-decoration: none;
+    margin-bottom: 7px;
+}
+
+.post__date--mb5 {
+    margin-bottom: 7px;
+    text-decoration: none;
+    color: gray;
+}
+
+.post__date--link {
+    margin-bottom: 7px;
+    text-decoration: none;
+}
+
+.post__date--link a {
+    color: #e9b014;
+}
+
+.post__date--link a:hover {
+    color: yellow;
+}
+
+.post__time {
+    margin-bottom: 5px;
+}
+
+.post__timed {
+    color: gray;
+}
+
+.old-price {
+    position: relative;
+}
+
+.old-price:before {
+    border-bottom: 3px solid yellow;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 50%;
+    -webkit-transform: rotate(-12deg);
+    transform: rotate(-12deg);
+}
+
+footer {
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #202020;
+    margin-top: 100px;
+    width: 100%;
+    padding: 25px;
+    border-top: 1px solid dimgray;
+}
+
+.footer__info {
+    margin-left: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+}
+
+.footer-btn {
+    position: absolute;
+    left: 50%;
+}
+
+.photos {
+    float: left;
+    max-width: 450px;
+    margin-left: 50px;
+    margin-right: 100px;
+}
+
+.photos h4 {
+    margin-bottom: 7px;
+    color: #a3a3a3;
+}
+
+.str__photo {
+    margin-right: 2px;
+}
+
+.info {
+    font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.info-1 {
+    margin-bottom: 30px;
+}
+
+.info-2 {
+    cursor: pointer;
+    color: #e9b014;
+}
+
+.info-2:hover {
+    color: yellow;
+}

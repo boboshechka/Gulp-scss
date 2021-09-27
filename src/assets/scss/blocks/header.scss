@@ -1,0 +1,33 @@
+.header {
+    display:flex;
+    height: 100%;
+    width:100%;
+    text-align:center;
+    background-color: black;
+    color:#e9b014;
+    font-size:24px;
+    padding-top:20px;
+    margin-bottom: 50px;
+}
+
+.header__top {
+    margin: 0 auto;
+
+}
+
+.center {
+    margin-left: 220px;
+}
+
+.left {
+    margin-left: 100px;
+    color:rgb(163, 163, 163);
+    font-size:30px;
+
+}
+.right {
+    padding: 30px 0px;
+    margin-left: 100px;
+    color:rgb(163, 163, 163);
+}
+

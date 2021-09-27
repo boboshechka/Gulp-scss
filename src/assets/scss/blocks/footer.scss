@@ -1,0 +1,18 @@
+footer {
+    display: flex;
+    background-color: rgb(32, 32, 32);
+    margin-top: 100px;
+    width: 100%;
+    padding: 25px;
+    border-top: 1px solid rgb(105, 105, 105);
+}
+
+.footer__info {
+    margin-left: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+}
+.footer-btn {
+    position: absolute;
+    left:50%;
+}
